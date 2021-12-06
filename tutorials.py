@@ -181,4 +181,29 @@ for letter in 'Hello World':
 #print(count)
 #print('He said, "What\vs there"')
 print('He said, "What\x61 s there"')
-print(r'He said, "What\x61 is there"')'''
+print(r'He said, "What\x61 is there"')
+password = "friend"
+pwd = input("Enter the password to login: ")
+if pwd == password:
+    print("Login succesfully")
+else:
+    print("Incorrect password")
+light = input("Enter the light colour: ").lower()
+if light == "red":
+    print("Do not cross")
+elif light == "green":
+    print("You may cross \nbye!!!")
+elif light == "yellow":
+    print("Wait a little ")
+else:
+    print("Invalid light colour!!!")
+num = int(input("Enter the number: "))
+if num <= 100 and num > 0:
+    if num < 50:
+        print("The number is less then 50")
+    if num == 50:
+        print("The number is 50")
+    elif num > 50:
+        print("The number is greater than 50 ")
+else:
+    print("Invalid Range")'''
