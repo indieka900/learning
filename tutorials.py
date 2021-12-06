@@ -1,4 +1,4 @@
-def break_all():
+'''def break_all():
     for j in range(1, 5):
         for i in range(1,4):
             if i*j == 6:
@@ -54,7 +54,7 @@ x = list(s)
 #salary("Jose",123343,4566)
 counter = 0
 x = 12.435
-'''while counter < 3:
+while counter < 3:
     print("Inside loop is %1.2f" %x )
     counter += 1
 else:
@@ -126,4 +126,59 @@ greet('God','Loves me')
 def greet(*names):
     for name in names:
         print('Hello',name)
-greet('Joseph','Mark','Lyn','Mitchele')'''
+greet('Joseph','Mark','Lyn','Mitchele')
+def greet(name,msg='Hi'):
+    print(name,msg)
+greet('Joseph')
+greet('Ann')
+def recury(x):
+    if x == 1:
+        return 1
+    else:
+        return(x*recury(x-1))
+
+num = int(input("Enter the number: "))
+if num >= 1:
+    print('The factorial of',num,'is',recury(num))
+    for n in range(num+1,0,-1):
+        print(n,end=' ')
+double = lambda x: x * 8
+print(double(5))
+my_list = [1,5,3,7,4,6,80]
+new_list = list(filter(lambda x: (x%2 == 0),my_list)) #use of filter where it illuminates the item which is not divisible by 2
+print(new_list)
+my_list = [1,5,3,7,4,6,80]
+new_list = list(map(lambda x: (x*2),my_list)) #use of map it will multiply everything by 2
+print(new_list)
+import math
+print(math.pi)
+print(math.e
+import sys
+for i in sys.path:
+    print(i))
+y = 0b11011001 #binary
+m = 0xFBC #hexadecimal
+n = 0o15 #octal
+print(y)
+print(m))
+from decimal import Decimal as D
+y = D('1.5') * D('3.20')
+print(y)
+import random
+#print(random.randrange(000,999))
+y = ['a','b','c','d','e']
+print(random.choice(y))
+print(random.shuffle(y))
+my_lst = ['j','r','p','b','p']
+print('m' in my_lst)
+print(my_lst[1:-3])
+print(my_lst.count('r'))
+print(my_lst.index('p'))
+count = 0
+for letter in 'Hello World':
+    if (letter == 'l'):
+        count += 1
+#print(count)
+#print('He said, "What\vs there"')
+print('He said, "What\x61 s there"')
+print(r'He said, "What\x61 is there"')'''
