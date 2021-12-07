@@ -1,13 +1,13 @@
 import random
 while True:
     choices = ["rock","stone","cement","sand"]
-    computer = random.choices(choices)
+    computer = random.choice(choices)
     worker = None
     while worker not in choices:
         worker = input("Hey rock, stone, cement or sand?: ").lower()
 
     if worker == computer:
-            print("computer choose: ",computer)
+            print("computer choose",computer)
             print("you chosed: ",worker)
             print("You win!!!!")
             break

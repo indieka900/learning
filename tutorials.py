@@ -207,4 +207,3 @@ if num <= 100 and num > 0:
         print("The number is greater than 50 ")
 else:
     print("Invalid Range")'''
-#rock paper scissors
