@@ -206,4 +206,44 @@ if num <= 100 and num > 0:
     elif num > 50:
         print("The number is greater than 50 ")
 else:
-    print("Invalid Range")'''
+    print("Invalid Range")
+print("{},{} and {} are good students.".format('john','joseph','dan'))
+print("{2},{0} and {1} are good students.".format('john','joseph','dan'))
+print("Binary represantation of {0} is {0:b}.".format(14))
+print("The string alignment is",end=' ')
+print("|{:<10}|{:<10}|{:<10}|".format('butter','bread','ham'))
+print("This will split this line into list".split())
+print('will split this line into list'.find('ne'))
+print("Happy birthday girl".replace('birthday','Christmas'))
+#sets
+a = set() #creating empty set
+print(type(a))
+c = {1,6,2,4,3,5,7,1}
+#my_set.discard(1)
+#my_set.remove(6)
+#print(my_set)
+b = {23,43,54,15,32,1,6,4,7,5}
+print(c|b) # union of the sets
+print(c&b) # intersection of the sets
+print(b-c) # set difference
+print(c-b)
+print(c^b) #symetric difference
+for letter in set('apple'):
+    print(letter)
+for i in range(21):
+    for j in range(i+1):
+        print("@",end='')
+    print("weekend ni kesho",end='')
+    print("")
+squares= {x: x**2 for x in range(10)}
+print(squares)
+squares= {x: x*x for x in range(10) if x%2 != 0}
+print(squares)
+for n in squares:
+    print(squares[n])'''
+class Myclass:
+    a = 10
+    #print(a)
+    def func(self):
+        print("hello")
+Myclass.func

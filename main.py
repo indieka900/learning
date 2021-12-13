@@ -352,7 +352,7 @@ def break_all():
             if i*j == 6:
                 return(i) # will stop when i*j = 6
             print(i*j)
-#reak_all()
+#break_all()
 def break_loop():
     for i in range(1, 5):
         if (i == 4):
