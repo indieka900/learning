@@ -240,10 +240,67 @@ print(squares)
 squares= {x: x*x for x in range(10) if x%2 != 0}
 print(squares)
 for n in squares:
-    print(squares[n])'''
-class Myclass:
-    a = 10
-    #print(a)
-    def func(self):
-        print("hello")
-Myclass.func
+    print(squares[n])
+countries = ["Nigeria","South Africa","Kenya","China","Germany","Canada"]
+countries[0]="United states"
+#print(countries)
+list1 = [2,4,5,1,3]
+list2 = ["banana","apple","Mangoes","oranges"]
+#list1.extend(list2)
+#print(list1)
+list2.append("Cherry")
+list2.insert(1,"pumkin")
+list2.remove("apple")
+#list2.clear()
+#print(list2)
+list1.sort()
+#print(list1)
+list2.pop()
+#print(list2.pop())
+names = ["Symon","Vicky",["Frankline","Tony",["Joseph","Ann"]]]
+print(names[2][2][0])
+names1 = ["Emmanuel","Jared",["Frank","Irene",["Patterson","Bruno"],"Peter"]]
+#names[2][2].insert(2,names1[2][2][1])
+print(names)
+nmae = "John dor"
+print(list(nmae))
+import random
+n=0.1
+y=random.uniform(0.1,10.0)
+#print("{:.2f}".format(y))
+#lambda function
+P = lambda x: x * 5
+#print(P(5)) # is same as
+def P(x):
+    return x * 5
+#print(P(5))
+#lambda can also be used with filter which evaluates for a specific condition
+#like here it evaluates and print even numbers in the list
+my_list = [1,3,2,8,4,5,10,9]
+#new_list = list(filter(lambda x: (x%2==0),my_list))
+#print(new_list)
+#Also lambda can be used with map
+#like here map is used to double all the elements inthe list
+new_list = list(map(lambda x: x * 2 , my_list))
+#print(new_list)
+for i in my_list:
+    print(i*2,end=' ')
+import decimal
+#print(decimal.Decimal(0.1 + 1.2))
+import fractions
+#print(fractions.Fraction(1.5))
+import math as m
+print(m.pi)
+print(m.cos(31))
+print(m.exp(1))
+print(m.log10(100)) #10 is a base
+print(m.sinh(60))
+print(m.fabs(31))
+print(m.factorial(10))'''
+marks = {}.fromkeys(['Math','English','Science'],2)
+for items in marks.items():
+    print(items)
+squares = {x: x*x for x in range(0,101,5)}
+for i in squares:
+    print(i,end=' = ')
+    print(squares[i])
