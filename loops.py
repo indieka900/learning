@@ -4,8 +4,6 @@
 #print('Your name is '+name)
 #for i in range(10):
     #print(i+1)
-for i in range(45,90+1,5):
-    print(i+1)
 #import time
 #for sec in "joseph":
     #print(sec)
@@ -21,10 +19,10 @@ for i in range(45,90+1,5):
     #print()
 
 #break
-#while True:
-    #name = input("Enter your name")
-    #if name != "":
-        #break
+"""while True:
+    name = input("Enter your name")
+    if name != "":
+        break"""
 
 #continue
 #phone_number = "0713-283-900"
